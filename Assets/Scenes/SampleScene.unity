@@ -355,7 +355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 113964161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 468223590}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SubmitGuess
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &113964161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,8 +628,9 @@ GameObject:
   m_Component:
   - component: {fileID: 218272053}
   - component: {fileID: 218272054}
+  - component: {fileID: 218272055}
   m_Layer: 5
-  m_Name: Cirkel
+  m_Name: Option2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,8 +703,32 @@ MonoBehaviour:
   m_Group: {fileID: 1981576418}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 218272055}
+        m_TargetAssemblyTypeName: Shape, Assembly-CSharp
+        m_MethodName: SelectionChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &218272055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218272052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85befd661871b9968c819a605547539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266440933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1199,58 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &468223588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468223589}
+  - component: {fileID: 468223590}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468223589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468223588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 700.52, y: 358.14258, z: -4.5474663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468223590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468223588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 243494f9ee7c4f847a033415123e5b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameResultText: {fileID: 1824068144}
+  messageText: {fileID: 1589590736}
+  shapes:
+  - {fileID: 894919442}
+  - {fileID: 218272055}
+  - {fileID: 1586317971}
+  - {fileID: 1021139635}
+  toggleGroup: {fileID: 1981576418}
 --- !u!1 &761730438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,8 +1645,9 @@ GameObject:
   m_Component:
   - component: {fileID: 894919440}
   - component: {fileID: 894919441}
+  - component: {fileID: 894919442}
   m_Layer: 5
-  m_Name: Square
+  m_Name: Option1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1630,8 +1720,32 @@ MonoBehaviour:
   m_Group: {fileID: 1981576418}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 894919442}
+        m_TargetAssemblyTypeName: Shape, Assembly-CSharp
+        m_MethodName: SelectionChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &894919442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894919439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e7d94c65bb08c6f8b58781e37f5263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &903568360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,8 +1991,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1021139633}
   - component: {fileID: 1021139634}
+  - component: {fileID: 1021139635}
   m_Layer: 5
-  m_Name: Star
+  m_Name: Option4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,8 +2066,32 @@ MonoBehaviour:
   m_Group: {fileID: 1981576418}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021139635}
+        m_TargetAssemblyTypeName: Shape, Assembly-CSharp
+        m_MethodName: SelectionChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1021139635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021139632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7485f1e030a5b499ba0de4d4490313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564326979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,8 +2177,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1586317969}
   - component: {fileID: 1586317970}
+  - component: {fileID: 1586317971}
   m_Layer: 5
-  m_Name: Triangle
+  m_Name: Option3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,8 +2252,32 @@ MonoBehaviour:
   m_Group: {fileID: 1981576418}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1586317971}
+        m_TargetAssemblyTypeName: Shape, Assembly-CSharp
+        m_MethodName: SelectionChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1586317971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586317968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3149b72720009dd98a297f2664b09d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1589590734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,13 +2362,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2678,3 +2842,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 890315612}
   - {fileID: 867707169}
+  - {fileID: 468223589}
